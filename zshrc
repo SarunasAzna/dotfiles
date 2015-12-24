@@ -5,7 +5,7 @@ export ZSH=/home/sarunas/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="michelebologna"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -57,8 +57,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
@@ -85,3 +83,8 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="/home/sarunas/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# terminal colors
+TERM=xterm-256color 
+# setenv is .cshrc command
+#setenv PATH /usr/lib/jvm/oracle_jdk8/bin:$PATH
+#setenv JAVA_HOME /usr/lib/jvm/oracle_jdk8
