@@ -5,5 +5,7 @@ if [ $lang == 'us' ]; then
     setxkbmap lt
 elif [ $lang == 'lt' ]; then
     setxkbmap us
+else
+    setxkbmap lt
                 
 fi
