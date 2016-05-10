@@ -13,6 +13,8 @@ Plugin 'klen/python-mode'
 " Nerd commenter
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
+" XML linter
+Plugin 'othree/xml.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()  
 set nocompatible
