@@ -13,6 +13,10 @@ Plugin 'klen/python-mode'
 " Nerd commenter
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
+" Stuff for Git
+Plugin 'airblade/vim-gitgutter'
+" vim-airline is good with gitgutter. Turn on after 'warm up' with gitgutter.
+" Plugin 'bling/vim-airline'
 " XML linter
 Plugin 'othree/xml.vim'
 " All of your Plugins must be added before the following line
