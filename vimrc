@@ -15,6 +15,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
 " Stuff for Git
 Plugin 'airblade/vim-gitgutter'
+" File buffer
+Plugin 'ctrlpvim/ctrlp.vim'
 " vim-airline is good with gitgutter. Turn on after 'warm up' with gitgutter.
 " Plugin 'bling/vim-airline'
 " XML linter
