@@ -21,6 +21,10 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'bling/vim-airline'
 " XML linter
 Plugin 'othree/xml.vim'
+" Colorschemes
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
+Plugin 'jpo/vim-railscasts-theme'
+Plugin 'limadm/vim-blues'
 " All of your Plugins must be added before the following line
 call vundle#end()  
 set nocompatible
@@ -32,7 +36,8 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 " Vim color scheme
-colorscheme elflord
+colorscheme blues
+syntax on
 " copy to global clipboard instead of Vims'
 set clipboard=unnamedplus
 " enables filetype Detection
