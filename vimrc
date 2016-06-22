@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " Python linter
 Plugin 'klen/python-mode'
+Plugin 'heavenshell/vim-pydocstring'
 " JavaScript linter
 " Plugin 'hallettj/jslint.vim'
 " Nerd commenter

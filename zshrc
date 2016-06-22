@@ -91,8 +91,8 @@ TERM=xterm-256color
 #setenv JAVA_HOME /usr/lib/jvm/oracle_jdk8
 export MARKPATH=$HOME/.marks
 function jump { 
-    cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
-}
+        cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
+    }
 function mark { 
     mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
 }
