@@ -26,6 +26,7 @@ Plugin 'othree/xml.vim'
 Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'limadm/vim-blues'
+Plugin 'suan/vim-instant-markdown'
 " All of your Plugins must be added before the following line
 call vundle#end()  
 set nocompatible
@@ -45,3 +46,4 @@ set clipboard=unnamedplus
 filetype on
 " enables file type specific plugins
 filetype plugin on
+let g:instant_markdown_slow = 1
