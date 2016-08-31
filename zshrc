@@ -85,21 +85,20 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="/home/sarunas/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # terminal colors
-TERM=xterm-256color 
+TERM=xterm-256color
 # setenv is .cshrc command
 #setenv PATH /usr/lib/jvm/oracle_jdk8/bin:$PATH
 #setenv JAVA_HOME /usr/lib/jvm/oracle_jdk8
 export MARKPATH=$HOME/.marks
-function jump { 
+function jump {
         cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
     }
-function mark { 
+function mark {
     mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
 }
-function unmark { 
+function unmark {
     rm -i "$MARKPATH/$1"
 }
 function marks {
     ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
-
