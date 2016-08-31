@@ -27,8 +27,9 @@ Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'limadm/vim-blues'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'bronson/vim-trailing-whitespace'
 " All of your Plugins must be added before the following line
-call vundle#end()  
+call vundle#end()
 set nocompatible
 filetype plugin indent on
 " show existing tab with 4 spaces width
