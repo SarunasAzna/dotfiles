@@ -47,3 +47,8 @@ filetype on
 " enables file type specific plugins
 filetype plugin on
 let g:instant_markdown_slow = 1
+" remove arrows usage
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
