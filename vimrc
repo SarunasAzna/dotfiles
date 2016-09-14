@@ -7,12 +7,13 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " Python linter
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 Plugin 'heavenshell/vim-pydocstring'
 " JavaScript linter
 " Plugin 'hallettj/jslint.vim'
 " Nerd commenter
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 Plugin 'christoomey/vim-tmux-navigator'
 " Stuff for Git
 Plugin 'airblade/vim-gitgutter'
@@ -28,6 +29,7 @@ Plugin 'jpo/vim-railscasts-theme'
 Plugin 'limadm/vim-blues'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()
 set nocompatible
@@ -53,3 +55,15 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_checkers = ['pylint']
