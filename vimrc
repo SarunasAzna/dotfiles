@@ -7,7 +7,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " Python linter
-" Plugin 'klen/python-mode'
+Plugin 'klen/python-mode'
 Plugin 'heavenshell/vim-pydocstring'
 " JavaScript linter
 " Plugin 'hallettj/jslint.vim'
@@ -22,7 +22,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " vim-airline is good with gitgutter. Turn on after 'warm up' with gitgutter.
 " Plugin 'bling/vim-airline'
 " XML linter
-Plugin 'othree/xml.vim'
+" Plugin 'othree/xml.vim'
 " Colorschemes
 Plugin 'gertjanreynaert/cobalt2-vim-theme'
 Plugin 'jpo/vim-railscasts-theme'
@@ -63,7 +63,8 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = 1
+lef g:pymode_lint_on_write = 1
